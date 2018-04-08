@@ -4,6 +4,7 @@ Git has a mutable index called stage.
 Git tracks changes of files.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 master add
 test for merge
 =======
@@ -13,3 +14,6 @@ one more line
 =======
 branch dev2 test
 >>>>>>> dev2
+=======
+branch dev1 test3334
+>>>>>>> dev1
