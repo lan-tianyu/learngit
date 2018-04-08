@@ -3,9 +3,13 @@ Git is free software distributed under the GPL.
 Git has a mutable index called stage.
 Git tracks changes of files.
 <<<<<<< HEAD
+<<<<<<< HEAD
 master add
 test for merge
 =======
 branch dev1 test
 one more line
 >>>>>>> dev1
+=======
+branch dev2 test
+>>>>>>> dev2
