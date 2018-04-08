@@ -1,0 +1,24 @@
+select sku,spu,count(distinct(sku)) from SmartPinGouItem group by spu having count(distinct(sku))>2 order by count(*) desc limit 5;
++---------+---------+----------------------+
+| sku     | spu     | count(distinct(sku)) |
++---------+---------+----------------------+
+| 6190852 | 6190852 |                   30 |
+| 4801201 | 4801201 |                   28 |
+| 5981463 | 5981463 |                   25 |
+| 6190816 | 6190816 |                   23 |
+| 4649481 | 4649457 |                   21 |
++---------+---------+----------------------+
+5 rows in set (0.04 sec)
+
+select sku, orderQuantity,orderAmount,orderConversionRate,pv,uv,OrderQuantity,OrderAmount ,uvValue from SmartPinGouItem where spu=6213744;
+
+select sku, orderQuantity,orderAmount,orderConversionRate,pv,uv,OrderQuantity,OrderAmount ,uvValue from SmartPinGouItem where spu=1981298;
+
+select sku, orderQuantity,orderAmount,orderConversionRate,pv,uv,OrderQuantity,OrderAmount ,uvValue from SmartPinGouItem where spu=4542673;
+
+
+
+
+
+hbase数据：
+get 'MerchPortraitSkuTest', '6213744'
